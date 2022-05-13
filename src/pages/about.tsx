@@ -1,21 +1,39 @@
 import client from 'graphql/client'
 import { GET_PAGES } from 'graphql/querys'
+import { useRouter } from 'next/router'
 
-import AboutTemplate from 'templates/About'
+import PageTemplate from 'templates/Pages'
 
 export default function AboutPage() {
-  return <AboutTemplate />
+  const router = useRouter()
+
+  if (router.isFallback) return null
+
+  return <PageTemplate />
 }
 
-export const getStaticProps = async () => {
-  const { pages } = await client.request(GET_PAGES)
+export async function getStaticPaths() {
+  const { pages } = await client.request(GET_PAGES, { first: 3 })
 
-  console.log(pages)
+  const paths = pages.map(({ slug }) => ({
+    params: { slug }
+  }))
 
   return {
-    props: {}
+    paths,
+    fallback: true
   }
 }
+
+// export const getStaticProps = async () => {
+//   const { pages } = await client.request(GET_PAGES)
+
+//   console.log(pages)
+
+//   return {
+//     props: {}
+//   }
+// }
 
 // getStaticPaths => serve para gerar as urls em build time: /about
 // getStaticProps => serve para buscar dados da pagina (props) - build time
