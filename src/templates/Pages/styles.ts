@@ -19,8 +19,10 @@ export const Heading = styled.h1`
 export const Body = styled.div`
   // styles of body
   // p, a, ul, li, blockquote
-  p {
+  p,
+  a {
     font-size: var(--medium);
     line-height: var(--medium);
+    margin: 10px;
   }
 `
