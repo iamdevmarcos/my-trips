@@ -1,5 +1,5 @@
 import { MapProps } from 'components/Map'
-import { GetPlacesQuery } from 'generated/graphql'
+import { GetPlacesQuery } from 'graphql/generated/graphql'
 import client from 'graphql/client'
 import { GET_PLACES } from 'graphql/queries'
 import HomeTemplate from 'templates/Home'

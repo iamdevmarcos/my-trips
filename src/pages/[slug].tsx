@@ -6,7 +6,7 @@ import client from 'graphql/client'
 import PageTemplate, { PageTemplateProps } from 'templates/Pages'
 
 import { GET_PAGES, GET_PAGE_BY_SLUG } from 'graphql/queries'
-import { GetPageBySlugQuery, GetPagesQuery } from 'generated/graphql'
+import { GetPageBySlugQuery, GetPagesQuery } from 'graphql/generated/graphql'
 
 export default function Page({ heading, body }: PageTemplateProps) {
   const router = useRouter()
