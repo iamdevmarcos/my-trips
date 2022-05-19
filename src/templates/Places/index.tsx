@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 type ImageProps = {
   url: string
   height: number
@@ -22,9 +24,15 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 
       <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
 
-      {/* {place.gallery.map((image, index) => (
-        <img src={image.url} alt={place.name} key={index} />
-      ))} */}
+      {place.gallery.map((image, index) => (
+        <Image
+          src={image.url}
+          alt={place.name}
+          key={index}
+          width="200"
+          height="200"
+        />
+      ))}
     </>
   )
 }
