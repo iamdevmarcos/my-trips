@@ -1,3 +1,5 @@
+import { NextSeo } from 'next-seo'
+
 import Image from 'next/image'
 import * as S from './styles'
 
@@ -17,6 +19,7 @@ export type PlacesTemplateProps = {
     name: string
     description?: {
       html: string
+      text: string
     }
     gallery: ImageProps[]
   }
@@ -29,6 +32,12 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
 
   return (
     <>
+      <NextSeo
+        title={`${place.name} - My Trips`}
+        description={place.description?.text}
+        canonical="https://my-trips-iamdevmarcos.vercel.app/"
+      />
+
       <LinkWrapper href="/">
         <CloseOutline size={32} aria-label="Go back to map" />
       </LinkWrapper>
