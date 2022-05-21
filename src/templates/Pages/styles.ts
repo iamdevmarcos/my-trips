@@ -23,6 +23,6 @@ export const Body = styled.div`
   a {
     font-size: var(--medium);
     line-height: var(--medium);
-    margin: 10px;
+    margin: 20px;
   }
 `
