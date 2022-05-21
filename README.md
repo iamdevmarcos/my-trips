@@ -1,58 +1,64 @@
+# My Trips
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+<p align="center">
+  <a href="https://my-trips-iamdevmarcos.vercel.app/">
+    <img src="./public/img/project-preview.png" width="550">
+  </a>
+</p>
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
+## About this Project
 
-This project uses lot of stuff as:
+This is a project made in [Willian Justen](https://willianjusten.com.br/cursos) course and aims to mark places in the world that I want to visit one day.
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+Be sure to send your feedback.
 
-## Getting Started
+## Technology stack
 
-First, run the development server:
+- **Front-end:** [Next.js](https://nextjs.org/)
+- **Testing:** [Jest](https://jestjs.io/)
+- **Build:** [Vercel](https://vercel.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
+## Demo of project
+
+[Click Here](https://my-trips-iamdevmarcos.vercel.app/)
+
+
+## Running locally
+
+1. Clone this repo:
+
+```sh
+$ git clone https://github.com/iamdevmarcos/my-trips.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Then go to the project's folder:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+cd my-trips
+```
 
-## Commands
+3. Install all dependencies:
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+```sh
+yarn install
+```
 
-## Learn More
+4. Run locally:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Links
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Email: marcosdev.me@gmail.com
 
-## Deploy on Vercel
+LinkedIn: [Marcos Andre](https://www.linkedin.com/in/iamdevmarcos/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Website: [marcosdev.me](https://marcosdev.me/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Autor
+
+| [<img src="https://avatars.githubusercontent.com/u/92524722?v=4" width=115><br><sub>@iamdevmarcos</sub>](https://github.com/iamdevmarcos) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
