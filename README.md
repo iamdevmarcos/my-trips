@@ -18,7 +18,7 @@ Be sure to send your feedback.
 - **Testing:** [Jest](https://jestjs.io/)
 - **Build:** [Vercel](https://vercel.com/)
 
-## Demo of project
+## Demo
 
 [Click Here](https://my-trips-iamdevmarcos.vercel.app/)
 
